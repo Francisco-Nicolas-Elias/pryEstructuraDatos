@@ -174,7 +174,7 @@
             // lblTramite
             // 
             this.lblTramite.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTramite.Location = new System.Drawing.Point(94, 93);
+            this.lblTramite.Location = new System.Drawing.Point(59, 89);
             this.lblTramite.Name = "lblTramite";
             this.lblTramite.Size = new System.Drawing.Size(100, 23);
             this.lblTramite.TabIndex = 5;
@@ -182,7 +182,7 @@
             // lblNombre
             // 
             this.lblNombre.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblNombre.Location = new System.Drawing.Point(94, 59);
+            this.lblNombre.Location = new System.Drawing.Point(59, 55);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(100, 23);
             this.lblNombre.TabIndex = 4;
@@ -190,7 +190,7 @@
             // lblCodigo
             // 
             this.lblCodigo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCodigo.Location = new System.Drawing.Point(94, 20);
+            this.lblCodigo.Location = new System.Drawing.Point(59, 16);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(100, 23);
             this.lblCodigo.TabIndex = 3;
