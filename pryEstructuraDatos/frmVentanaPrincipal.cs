@@ -16,5 +16,24 @@ namespace pryEstructuraDatos
         {
             InitializeComponent();
         }
+
+        private void datosDelDesarrolladorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDatosDesarrollador frmDatosDesarrollador = new frmDatosDesarrollador();
+            frmDatosDesarrollador.Show();
+            this.Hide();
+        }
+
+        private void colaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCola frmCola = new frmCola();
+            frmCola.Show();
+            this.Hide();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
