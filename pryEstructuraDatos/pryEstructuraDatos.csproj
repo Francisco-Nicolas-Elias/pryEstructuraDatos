@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsCola.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="frmCola.cs">
       <SubType>Form</SubType>

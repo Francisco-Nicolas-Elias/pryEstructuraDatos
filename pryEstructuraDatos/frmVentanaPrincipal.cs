@@ -20,15 +20,13 @@ namespace pryEstructuraDatos
         private void datosDelDesarrolladorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmDatosDesarrollador frmDatosDesarrollador = new frmDatosDesarrollador();
-            frmDatosDesarrollador.Show();
-            this.Hide();
+            frmDatosDesarrollador.ShowDialog();           
         }
 
         private void colaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCola frmCola = new frmCola();
-            frmCola.Show();
-            this.Hide();
+            frmCola.ShowDialog();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
