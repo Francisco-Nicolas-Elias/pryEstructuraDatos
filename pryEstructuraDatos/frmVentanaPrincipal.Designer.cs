@@ -114,6 +114,7 @@
             this.pilaToolStripMenuItem.Name = "pilaToolStripMenuItem";
             this.pilaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pilaToolStripMenuItem.Text = "Pila...";
+            this.pilaToolStripMenuItem.Click += new System.EventHandler(this.pilaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -143,7 +144,7 @@
             // árbolBinarioToolStripMenuItem
             // 
             this.árbolBinarioToolStripMenuItem.Name = "árbolBinarioToolStripMenuItem";
-            this.árbolBinarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.árbolBinarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.árbolBinarioToolStripMenuItem.Text = "Árbol Binario...";
             // 
             // baseDeDatosToolStripMenuItem

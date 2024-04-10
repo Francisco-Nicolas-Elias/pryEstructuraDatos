@@ -60,6 +60,12 @@
     <Compile Include="frmDatosDesarrollador.Designer.cs">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPila.Designer.cs">
+      <DependentUpon>frmPila.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVentanaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatosDesarrollador.resx">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPila.resx">
+      <DependentUpon>frmPila.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentanaPrincipal.resx">
       <DependentUpon>frmVentanaPrincipal.cs</DependentUpon>

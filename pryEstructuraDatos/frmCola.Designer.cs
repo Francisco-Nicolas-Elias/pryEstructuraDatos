@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbCola = new System.Windows.Forms.PictureBox();
             this.gbNuevoElemento = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtTramite = new System.Windows.Forms.TextBox();
@@ -51,22 +50,13 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lstCola = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCola)).BeginInit();
+            this.pbCola = new System.Windows.Forms.PictureBox();
             this.gbNuevoElemento.SuspendLayout();
             this.gbElementoEliminado.SuspendLayout();
             this.gbListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCola)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbCola
-            // 
-            this.pbCola.Image = global::pryEstructuraDatos.Properties.Resources.cola;
-            this.pbCola.Location = new System.Drawing.Point(12, 23);
-            this.pbCola.Name = "pbCola";
-            this.pbCola.Size = new System.Drawing.Size(217, 218);
-            this.pbCola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbCola.TabIndex = 0;
-            this.pbCola.TabStop = false;
             // 
             // gbNuevoElemento
             // 
@@ -270,6 +260,16 @@
             this.lstCola.Size = new System.Drawing.Size(176, 173);
             this.lstCola.TabIndex = 0;
             // 
+            // pbCola
+            // 
+            this.pbCola.Image = global::pryEstructuraDatos.Properties.Resources.cola;
+            this.pbCola.Location = new System.Drawing.Point(12, 23);
+            this.pbCola.Name = "pbCola";
+            this.pbCola.Size = new System.Drawing.Size(217, 218);
+            this.pbCola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbCola.TabIndex = 0;
+            this.pbCola.TabStop = false;
+            // 
             // frmCola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,14 +281,14 @@
             this.Controls.Add(this.pbCola);
             this.Name = "frmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Estructura Dinámica no Linal - Cola";
-            ((System.ComponentModel.ISupportInitialize)(this.pbCola)).EndInit();
+            this.Text = "Estructura Dinámica Lineal - Cola";
             this.gbNuevoElemento.ResumeLayout(false);
             this.gbNuevoElemento.PerformLayout();
             this.gbElementoEliminado.ResumeLayout(false);
             this.gbElementoEliminado.PerformLayout();
             this.gbListado.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCola)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
