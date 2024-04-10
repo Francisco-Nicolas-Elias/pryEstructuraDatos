@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gbListado = new System.Windows.Forms.GroupBox();
+            this.gbListadoPila = new System.Windows.Forms.GroupBox();
             this.dgvPila = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lstPila = new System.Windows.Forms.ListBox();
-            this.gbElementoEliminado = new System.Windows.Forms.GroupBox();
+            this.gbElementoEliminadoPila = new System.Windows.Forms.GroupBox();
             this.btnEliminarPila = new System.Windows.Forms.Button();
             this.lblTramitePila = new System.Windows.Forms.Label();
             this.lblNombrePila = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.gbNuevoElemento = new System.Windows.Forms.GroupBox();
+            this.gbNuevoElementoPila = new System.Windows.Forms.GroupBox();
             this.btnAgregarPila = new System.Windows.Forms.Button();
             this.txtTramitePila = new System.Windows.Forms.TextBox();
             this.txtNombrePila = new System.Windows.Forms.TextBox();
@@ -51,23 +51,23 @@
             this.lblNombreNuevoElemento = new System.Windows.Forms.Label();
             this.lblCodNuevoElemento = new System.Windows.Forms.Label();
             this.pbPila = new System.Windows.Forms.PictureBox();
-            this.gbListado.SuspendLayout();
+            this.gbListadoPila.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).BeginInit();
-            this.gbElementoEliminado.SuspendLayout();
-            this.gbNuevoElemento.SuspendLayout();
+            this.gbElementoEliminadoPila.SuspendLayout();
+            this.gbNuevoElementoPila.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPila)).BeginInit();
             this.SuspendLayout();
             // 
-            // gbListado
+            // gbListadoPila
             // 
-            this.gbListado.Controls.Add(this.dgvPila);
-            this.gbListado.Controls.Add(this.lstPila);
-            this.gbListado.Location = new System.Drawing.Point(12, 280);
-            this.gbListado.Name = "gbListado";
-            this.gbListado.Size = new System.Drawing.Size(702, 200);
-            this.gbListado.TabIndex = 7;
-            this.gbListado.TabStop = false;
-            this.gbListado.Text = "Listado en una Lista y una Grilla";
+            this.gbListadoPila.Controls.Add(this.dgvPila);
+            this.gbListadoPila.Controls.Add(this.lstPila);
+            this.gbListadoPila.Location = new System.Drawing.Point(12, 280);
+            this.gbListadoPila.Name = "gbListadoPila";
+            this.gbListadoPila.Size = new System.Drawing.Size(702, 200);
+            this.gbListadoPila.TabIndex = 7;
+            this.gbListadoPila.TabStop = false;
+            this.gbListadoPila.Text = "Listado en una Lista y una Grilla";
             // 
             // dgvPila
             // 
@@ -105,21 +105,21 @@
             this.lstPila.Size = new System.Drawing.Size(176, 173);
             this.lstPila.TabIndex = 0;
             // 
-            // gbElementoEliminado
+            // gbElementoEliminadoPila
             // 
-            this.gbElementoEliminado.Controls.Add(this.btnEliminarPila);
-            this.gbElementoEliminado.Controls.Add(this.lblTramitePila);
-            this.gbElementoEliminado.Controls.Add(this.lblNombrePila);
-            this.gbElementoEliminado.Controls.Add(this.lblCodigoPila);
-            this.gbElementoEliminado.Controls.Add(this.label6);
-            this.gbElementoEliminado.Controls.Add(this.label5);
-            this.gbElementoEliminado.Controls.Add(this.label4);
-            this.gbElementoEliminado.Location = new System.Drawing.Point(514, 22);
-            this.gbElementoEliminado.Name = "gbElementoEliminado";
-            this.gbElementoEliminado.Size = new System.Drawing.Size(200, 218);
-            this.gbElementoEliminado.TabIndex = 6;
-            this.gbElementoEliminado.TabStop = false;
-            this.gbElementoEliminado.Text = "Elemento Eliminado";
+            this.gbElementoEliminadoPila.Controls.Add(this.btnEliminarPila);
+            this.gbElementoEliminadoPila.Controls.Add(this.lblTramitePila);
+            this.gbElementoEliminadoPila.Controls.Add(this.lblNombrePila);
+            this.gbElementoEliminadoPila.Controls.Add(this.lblCodigoPila);
+            this.gbElementoEliminadoPila.Controls.Add(this.label6);
+            this.gbElementoEliminadoPila.Controls.Add(this.label5);
+            this.gbElementoEliminadoPila.Controls.Add(this.label4);
+            this.gbElementoEliminadoPila.Location = new System.Drawing.Point(514, 22);
+            this.gbElementoEliminadoPila.Name = "gbElementoEliminadoPila";
+            this.gbElementoEliminadoPila.Size = new System.Drawing.Size(200, 218);
+            this.gbElementoEliminadoPila.TabIndex = 6;
+            this.gbElementoEliminadoPila.TabStop = false;
+            this.gbElementoEliminadoPila.Text = "Elemento Eliminado";
             // 
             // btnEliminarPila
             // 
@@ -183,21 +183,21 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Código:";
             // 
-            // gbNuevoElemento
+            // gbNuevoElementoPila
             // 
-            this.gbNuevoElemento.Controls.Add(this.btnAgregarPila);
-            this.gbNuevoElemento.Controls.Add(this.txtTramitePila);
-            this.gbNuevoElemento.Controls.Add(this.txtNombrePila);
-            this.gbNuevoElemento.Controls.Add(this.txtCodigoPila);
-            this.gbNuevoElemento.Controls.Add(this.lblTramiteNuevoElemento);
-            this.gbNuevoElemento.Controls.Add(this.lblNombreNuevoElemento);
-            this.gbNuevoElemento.Controls.Add(this.lblCodNuevoElemento);
-            this.gbNuevoElemento.Location = new System.Drawing.Point(276, 22);
-            this.gbNuevoElemento.Name = "gbNuevoElemento";
-            this.gbNuevoElemento.Size = new System.Drawing.Size(200, 218);
-            this.gbNuevoElemento.TabIndex = 5;
-            this.gbNuevoElemento.TabStop = false;
-            this.gbNuevoElemento.Text = "Nuevo Elemento";
+            this.gbNuevoElementoPila.Controls.Add(this.btnAgregarPila);
+            this.gbNuevoElementoPila.Controls.Add(this.txtTramitePila);
+            this.gbNuevoElementoPila.Controls.Add(this.txtNombrePila);
+            this.gbNuevoElementoPila.Controls.Add(this.txtCodigoPila);
+            this.gbNuevoElementoPila.Controls.Add(this.lblTramiteNuevoElemento);
+            this.gbNuevoElementoPila.Controls.Add(this.lblNombreNuevoElemento);
+            this.gbNuevoElementoPila.Controls.Add(this.lblCodNuevoElemento);
+            this.gbNuevoElementoPila.Location = new System.Drawing.Point(276, 22);
+            this.gbNuevoElementoPila.Name = "gbNuevoElementoPila";
+            this.gbNuevoElementoPila.Size = new System.Drawing.Size(200, 218);
+            this.gbNuevoElementoPila.TabIndex = 5;
+            this.gbNuevoElementoPila.TabStop = false;
+            this.gbNuevoElementoPila.Text = "Nuevo Elemento";
             // 
             // btnAgregarPila
             // 
@@ -272,19 +272,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(846, 505);
-            this.Controls.Add(this.gbListado);
-            this.Controls.Add(this.gbElementoEliminado);
-            this.Controls.Add(this.gbNuevoElemento);
+            this.Controls.Add(this.gbListadoPila);
+            this.Controls.Add(this.gbElementoEliminadoPila);
+            this.Controls.Add(this.gbNuevoElementoPila);
             this.Controls.Add(this.pbPila);
             this.Name = "frmPila";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinámica Lineal - Pila";
-            this.gbListado.ResumeLayout(false);
+            this.gbListadoPila.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).EndInit();
-            this.gbElementoEliminado.ResumeLayout(false);
-            this.gbElementoEliminado.PerformLayout();
-            this.gbNuevoElemento.ResumeLayout(false);
-            this.gbNuevoElemento.PerformLayout();
+            this.gbElementoEliminadoPila.ResumeLayout(false);
+            this.gbElementoEliminadoPila.PerformLayout();
+            this.gbNuevoElementoPila.ResumeLayout(false);
+            this.gbNuevoElementoPila.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPila)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -293,13 +293,13 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gbListado;
+        private System.Windows.Forms.GroupBox gbListadoPila;
         private System.Windows.Forms.DataGridView dgvPila;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.ListBox lstPila;
-        private System.Windows.Forms.GroupBox gbElementoEliminado;
+        private System.Windows.Forms.GroupBox gbElementoEliminadoPila;
         private System.Windows.Forms.Button btnEliminarPila;
         private System.Windows.Forms.Label lblTramitePila;
         private System.Windows.Forms.Label lblNombrePila;
@@ -307,7 +307,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox gbNuevoElemento;
+        private System.Windows.Forms.GroupBox gbNuevoElementoPila;
         private System.Windows.Forms.Button btnAgregarPila;
         private System.Windows.Forms.TextBox txtTramitePila;
         private System.Windows.Forms.TextBox txtNombrePila;
