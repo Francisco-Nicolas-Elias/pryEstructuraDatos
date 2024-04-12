@@ -83,6 +83,16 @@ namespace pryEstructuraDatos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lista_simple {
+            get {
+                object obj = ResourceManager.GetObject("Lista simple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Pila {
             get {
                 object obj = ResourceManager.GetObject("Pila", resourceCulture);

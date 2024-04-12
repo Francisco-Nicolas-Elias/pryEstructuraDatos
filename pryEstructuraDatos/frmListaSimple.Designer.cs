@@ -219,10 +219,11 @@
             // 
             // pbListaSimple
             // 
+            this.pbListaSimple.Image = global::pryEstructuraDatos.Properties.Resources.Lista_simple;
             this.pbListaSimple.Location = new System.Drawing.Point(12, 23);
             this.pbListaSimple.Name = "pbListaSimple";
-            this.pbListaSimple.Size = new System.Drawing.Size(217, 218);
-            this.pbListaSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbListaSimple.Size = new System.Drawing.Size(243, 218);
+            this.pbListaSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbListaSimple.TabIndex = 4;
             this.pbListaSimple.TabStop = false;
             // 
@@ -247,7 +248,6 @@
             this.gbNuevoElementoListaSimple.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbListaSimple)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -266,7 +266,7 @@
             this.pbPila.Image = global::pryEstructuraDatos.Properties.Resources.Pila;
             this.pbPila.Location = new System.Drawing.Point(12, 22);
             this.pbPila.Name = "pbPila";
-            this.pbPila.Size = new System.Drawing.Size(227, 218);
+            this.pbPila.Size = new System.Drawing.Size(213, 218);
             this.pbPila.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPila.TabIndex = 4;
             this.pbPila.TabStop = false;
