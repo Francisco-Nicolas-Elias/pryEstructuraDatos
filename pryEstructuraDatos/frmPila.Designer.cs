@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPila));
             this.gbListadoPila = new System.Windows.Forms.GroupBox();
             this.dgvPila = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -131,6 +132,7 @@
             this.btnEliminarPila.TabIndex = 6;
             this.btnEliminarPila.Text = "Eliminar";
             this.btnEliminarPila.UseVisualStyleBackColor = true;
+            this.btnEliminarPila.Click += new System.EventHandler(this.btnEliminarPila_Click);
             // 
             // lblTramitePila
             // 
@@ -209,6 +211,7 @@
             this.btnAgregarPila.TabIndex = 6;
             this.btnAgregarPila.Text = "Agregar";
             this.btnAgregarPila.UseVisualStyleBackColor = true;
+            this.btnAgregarPila.Click += new System.EventHandler(this.btnAgregarPila_Click);
             // 
             // txtTramitePila
             // 
@@ -260,10 +263,11 @@
             // 
             // pbPila
             // 
+            this.pbPila.Image = global::pryEstructuraDatos.Properties.Resources.Pila;
             this.pbPila.Location = new System.Drawing.Point(12, 22);
             this.pbPila.Name = "pbPila";
-            this.pbPila.Size = new System.Drawing.Size(217, 218);
-            this.pbPila.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbPila.Size = new System.Drawing.Size(227, 218);
+            this.pbPila.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPila.TabIndex = 4;
             this.pbPila.TabStop = false;
             // 
@@ -271,14 +275,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 505);
+            this.ClientSize = new System.Drawing.Size(748, 505);
             this.Controls.Add(this.gbListadoPila);
             this.Controls.Add(this.gbElementoEliminadoPila);
             this.Controls.Add(this.gbNuevoElementoPila);
             this.Controls.Add(this.pbPila);
             this.Name = "frmPila";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Estructura Dinámica Lineal - Pila";
+            this.Text = resources.GetString("$this.Text");
             this.gbListadoPila.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).EndInit();
             this.gbElementoEliminadoPila.ResumeLayout(false);
@@ -287,7 +291,6 @@
             this.gbNuevoElementoPila.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPila)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

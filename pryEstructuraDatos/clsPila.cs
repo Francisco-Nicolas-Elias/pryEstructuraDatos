@@ -8,50 +8,38 @@ using System.IO;
 
 namespace pryEstructuraDatos
 {
-    internal class clsCola
+    internal class clsPila
     {
-        //Campos de la clase 
+        //Campos de las clase 
         private clsNodo pri;
-        private clsNodo ult;
-
-        //Propiedades de la clase 
+        
+        //Propiedades de la clase
         public clsNodo Primero
         {
             get { return pri; }
             set { pri = value; }
         }
 
-        public clsNodo Ultimo
-        {
-            get { return ult; }
-            set { ult = value; }
-        }
-
         public void Agregar(clsNodo Nuevo)
         {
-            if (Primero == null)
+            if(Primero == null)
             {
                 Primero = Nuevo;
-                Ultimo = Nuevo;
             }
             else
             {
-                Ultimo.Siguiente = Nuevo;
-                Ultimo = Nuevo;
+                Nuevo.Siguiente = Primero;
+                Primero = Nuevo;
             }
         }
 
         public void Eliminar()
         {
-            if(Primero == Ultimo)
-            {
-                Primero = null;
-                Ultimo = null;
-            }
-            else
+            if(Primero != null)
             {
                 Primero = Primero.Siguiente;
             }
+            
         }
 
         public void Recorrer(DataGridView Grilla)
@@ -90,7 +78,7 @@ namespace pryEstructuraDatos
         public void Recorrer()
         {
             clsNodo aux = Primero;
-            StreamWriter AD = new StreamWriter("Cola.csv",false);
+            StreamWriter AD = new StreamWriter("Pila.csv", false);
             AD.WriteLine("Lista de espera \n");
             AD.WriteLine("Código;Nombre;Trámite");
             while (aux != null)

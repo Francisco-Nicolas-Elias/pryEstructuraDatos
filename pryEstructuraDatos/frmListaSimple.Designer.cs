@@ -35,6 +35,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lstListaSimple = new System.Windows.Forms.ListBox();
             this.gbElementoEliminadoListaSimple = new System.Windows.Forms.GroupBox();
+            this.cbCodigoListaSimple = new System.Windows.Forms.ComboBox();
             this.btnEliminarListaSimple = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.gbNuevoElementoListaSimple = new System.Windows.Forms.GroupBox();
@@ -46,7 +47,6 @@
             this.lblNombreNuevoElemento = new System.Windows.Forms.Label();
             this.lblCodNuevoElemento = new System.Windows.Forms.Label();
             this.pbListaSimple = new System.Windows.Forms.PictureBox();
-            this.cbCodigoListaSimple = new System.Windows.Forms.ComboBox();
             this.gbListadoListaSimple.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).BeginInit();
             this.gbElementoEliminadoListaSimple.SuspendLayout();
@@ -112,6 +112,15 @@
             this.gbElementoEliminadoListaSimple.TabIndex = 6;
             this.gbElementoEliminadoListaSimple.TabStop = false;
             this.gbElementoEliminadoListaSimple.Text = "Elemento a eliminar";
+            // 
+            // cbCodigoListaSimple
+            // 
+            this.cbCodigoListaSimple.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbCodigoListaSimple.FormattingEnabled = true;
+            this.cbCodigoListaSimple.Location = new System.Drawing.Point(56, 98);
+            this.cbCodigoListaSimple.Name = "cbCodigoListaSimple";
+            this.cbCodigoListaSimple.Size = new System.Drawing.Size(121, 21);
+            this.cbCodigoListaSimple.TabIndex = 7;
             // 
             // btnEliminarListaSimple
             // 
@@ -217,20 +226,11 @@
             this.pbListaSimple.TabIndex = 4;
             this.pbListaSimple.TabStop = false;
             // 
-            // cbCodigoListaSimple
-            // 
-            this.cbCodigoListaSimple.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbCodigoListaSimple.FormattingEnabled = true;
-            this.cbCodigoListaSimple.Location = new System.Drawing.Point(56, 98);
-            this.cbCodigoListaSimple.Name = "cbCodigoListaSimple";
-            this.cbCodigoListaSimple.Size = new System.Drawing.Size(121, 21);
-            this.cbCodigoListaSimple.TabIndex = 7;
-            // 
             // frmListaSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 494);
+            this.ClientSize = new System.Drawing.Size(756, 494);
             this.Controls.Add(this.gbListadoListaSimple);
             this.Controls.Add(this.gbElementoEliminadoListaSimple);
             this.Controls.Add(this.gbNuevoElementoListaSimple);
