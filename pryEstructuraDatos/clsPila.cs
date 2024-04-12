@@ -78,7 +78,7 @@ namespace pryEstructuraDatos
         public void Recorrer()
         {
             clsNodo aux = Primero;
-            StreamWriter AD = new StreamWriter("Pila.csv", false);
+            StreamWriter AD = new StreamWriter("Pila.csv", false, Encoding.UTF8);
             AD.WriteLine("Lista de espera \n");
             AD.WriteLine("Código;Nombre;Trámite");
             while (aux != null)
@@ -87,7 +87,7 @@ namespace pryEstructuraDatos
                 AD.Write(";");
                 AD.Write(aux.Nombre);
                 AD.Write(";");
-                AD.Write(aux.Tramite);
+                AD.WriteLine(aux.Tramite);
                 aux = aux.Siguiente;
             }
             AD.Close();
