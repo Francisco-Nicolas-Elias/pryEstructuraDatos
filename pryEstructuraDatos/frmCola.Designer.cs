@@ -78,9 +78,9 @@
             // 
             this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(23, 166);
+            this.btnAgregar.Location = new System.Drawing.Point(9, 166);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(158, 45);
+            this.btnAgregar.Size = new System.Drawing.Size(146, 45);
             this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -156,7 +156,7 @@
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Location = new System.Drawing.Point(13, 166);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(181, 45);
+            this.btnEliminar.Size = new System.Drawing.Size(146, 45);
             this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -217,7 +217,7 @@
             // 
             this.gbListado.Controls.Add(this.dgvCola);
             this.gbListado.Controls.Add(this.lstCola);
-            this.gbListado.Location = new System.Drawing.Point(12, 281);
+            this.gbListado.Location = new System.Drawing.Point(12, 261);
             this.gbListado.Name = "gbListado";
             this.gbListado.Size = new System.Drawing.Size(702, 200);
             this.gbListado.TabIndex = 3;
@@ -274,7 +274,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 501);
+            this.ClientSize = new System.Drawing.Size(728, 472);
             this.Controls.Add(this.gbListado);
             this.Controls.Add(this.gbElementoEliminado);
             this.Controls.Add(this.gbNuevoElemento);

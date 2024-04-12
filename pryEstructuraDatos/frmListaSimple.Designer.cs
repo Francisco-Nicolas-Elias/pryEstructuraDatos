@@ -58,7 +58,7 @@
             // 
             this.gbListadoListaSimple.Controls.Add(this.dgvListaSimple);
             this.gbListadoListaSimple.Controls.Add(this.lstListaSimple);
-            this.gbListadoListaSimple.Location = new System.Drawing.Point(12, 281);
+            this.gbListadoListaSimple.Location = new System.Drawing.Point(12, 259);
             this.gbListadoListaSimple.Name = "gbListadoListaSimple";
             this.gbListadoListaSimple.Size = new System.Drawing.Size(702, 200);
             this.gbListadoListaSimple.TabIndex = 7;
@@ -74,7 +74,7 @@
             this.Column3});
             this.dgvListaSimple.Location = new System.Drawing.Point(224, 19);
             this.dgvListaSimple.Name = "dgvListaSimple";
-            this.dgvListaSimple.Size = new System.Drawing.Size(478, 173);
+            this.dgvListaSimple.Size = new System.Drawing.Size(455, 173);
             this.dgvListaSimple.TabIndex = 1;
             // 
             // Column1
@@ -126,9 +126,9 @@
             // 
             this.btnEliminarListaSimple.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminarListaSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarListaSimple.Location = new System.Drawing.Point(13, 166);
+            this.btnEliminarListaSimple.Location = new System.Drawing.Point(10, 145);
             this.btnEliminarListaSimple.Name = "btnEliminarListaSimple";
-            this.btnEliminarListaSimple.Size = new System.Drawing.Size(181, 45);
+            this.btnEliminarListaSimple.Size = new System.Drawing.Size(167, 45);
             this.btnEliminarListaSimple.TabIndex = 6;
             this.btnEliminarListaSimple.Text = "Eliminar";
             this.btnEliminarListaSimple.UseVisualStyleBackColor = true;
@@ -153,7 +153,7 @@
             this.gbNuevoElementoListaSimple.Controls.Add(this.lblCodNuevoElemento);
             this.gbNuevoElementoListaSimple.Location = new System.Drawing.Point(276, 23);
             this.gbNuevoElementoListaSimple.Name = "gbNuevoElementoListaSimple";
-            this.gbNuevoElementoListaSimple.Size = new System.Drawing.Size(200, 218);
+            this.gbNuevoElementoListaSimple.Size = new System.Drawing.Size(177, 218);
             this.gbNuevoElementoListaSimple.TabIndex = 5;
             this.gbNuevoElementoListaSimple.TabStop = false;
             this.gbNuevoElementoListaSimple.Text = "Nuevo Elemento";
@@ -162,9 +162,9 @@
             // 
             this.btnAgregarListaSimple.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregarListaSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarListaSimple.Location = new System.Drawing.Point(23, 166);
+            this.btnAgregarListaSimple.Location = new System.Drawing.Point(9, 145);
             this.btnAgregarListaSimple.Name = "btnAgregarListaSimple";
-            this.btnAgregarListaSimple.Size = new System.Drawing.Size(158, 45);
+            this.btnAgregarListaSimple.Size = new System.Drawing.Size(146, 45);
             this.btnAgregarListaSimple.TabIndex = 6;
             this.btnAgregarListaSimple.Text = "Agregar";
             this.btnAgregarListaSimple.UseVisualStyleBackColor = true;
@@ -231,7 +231,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(756, 494);
+            this.ClientSize = new System.Drawing.Size(741, 474);
             this.Controls.Add(this.gbListadoListaSimple);
             this.Controls.Add(this.gbElementoEliminadoListaSimple);
             this.Controls.Add(this.gbNuevoElementoListaSimple);

@@ -63,7 +63,7 @@
             // 
             this.gbListadoPila.Controls.Add(this.dgvPila);
             this.gbListadoPila.Controls.Add(this.lstPila);
-            this.gbListadoPila.Location = new System.Drawing.Point(12, 280);
+            this.gbListadoPila.Location = new System.Drawing.Point(12, 258);
             this.gbListadoPila.Name = "gbListadoPila";
             this.gbListadoPila.Size = new System.Drawing.Size(702, 200);
             this.gbListadoPila.TabIndex = 7;
@@ -128,7 +128,7 @@
             this.btnEliminarPila.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarPila.Location = new System.Drawing.Point(13, 166);
             this.btnEliminarPila.Name = "btnEliminarPila";
-            this.btnEliminarPila.Size = new System.Drawing.Size(181, 45);
+            this.btnEliminarPila.Size = new System.Drawing.Size(146, 45);
             this.btnEliminarPila.TabIndex = 6;
             this.btnEliminarPila.Text = "Eliminar";
             this.btnEliminarPila.UseVisualStyleBackColor = true;
@@ -205,9 +205,9 @@
             // 
             this.btnAgregarPila.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregarPila.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarPila.Location = new System.Drawing.Point(23, 166);
+            this.btnAgregarPila.Location = new System.Drawing.Point(9, 167);
             this.btnAgregarPila.Name = "btnAgregarPila";
-            this.btnAgregarPila.Size = new System.Drawing.Size(158, 45);
+            this.btnAgregarPila.Size = new System.Drawing.Size(146, 45);
             this.btnAgregarPila.TabIndex = 6;
             this.btnAgregarPila.Text = "Agregar";
             this.btnAgregarPila.UseVisualStyleBackColor = true;
@@ -275,7 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(748, 505);
+            this.ClientSize = new System.Drawing.Size(748, 473);
             this.Controls.Add(this.gbListadoPila);
             this.Controls.Add(this.gbElementoEliminadoPila);
             this.Controls.Add(this.gbNuevoElementoPila);
