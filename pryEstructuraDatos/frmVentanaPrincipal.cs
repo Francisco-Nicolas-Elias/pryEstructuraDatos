@@ -31,7 +31,11 @@ namespace pryEstructuraDatos
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult resultado = MessageBox.Show("¿Desea salir del sistema?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes) 
+            {
+                Application.Exit();
+            }
         }
 
         private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -44,6 +48,12 @@ namespace pryEstructuraDatos
         {
             frmListaSimple frmListaSimple = new frmListaSimple();
             frmListaSimple.ShowDialog();
+        }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaDoble frmListaDoble = new frmListaDoble();
+            frmListaDoble.ShowDialog();
         }
     }
 }

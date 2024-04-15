@@ -121,10 +121,12 @@
             this.cbCodigoListaSimple.Name = "cbCodigoListaSimple";
             this.cbCodigoListaSimple.Size = new System.Drawing.Size(121, 21);
             this.cbCodigoListaSimple.TabIndex = 7;
+            this.cbCodigoListaSimple.SelectedIndexChanged += new System.EventHandler(this.cbCodigoListaSimple_SelectedIndexChanged);
             // 
             // btnEliminarListaSimple
             // 
             this.btnEliminarListaSimple.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarListaSimple.Enabled = false;
             this.btnEliminarListaSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarListaSimple.Location = new System.Drawing.Point(10, 145);
             this.btnEliminarListaSimple.Name = "btnEliminarListaSimple";
@@ -132,6 +134,7 @@
             this.btnEliminarListaSimple.TabIndex = 6;
             this.btnEliminarListaSimple.Text = "Eliminar";
             this.btnEliminarListaSimple.UseVisualStyleBackColor = true;
+            this.btnEliminarListaSimple.Click += new System.EventHandler(this.btnEliminarListaSimple_Click);
             // 
             // label4
             // 
@@ -161,6 +164,7 @@
             // btnAgregarListaSimple
             // 
             this.btnAgregarListaSimple.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarListaSimple.Enabled = false;
             this.btnAgregarListaSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarListaSimple.Location = new System.Drawing.Point(9, 145);
             this.btnAgregarListaSimple.Name = "btnAgregarListaSimple";
@@ -168,6 +172,7 @@
             this.btnAgregarListaSimple.TabIndex = 6;
             this.btnAgregarListaSimple.Text = "Agregar";
             this.btnAgregarListaSimple.UseVisualStyleBackColor = true;
+            this.btnAgregarListaSimple.Click += new System.EventHandler(this.btnAgregarListaSimple_Click);
             // 
             // txtTramiteListaSimple
             // 
@@ -175,6 +180,7 @@
             this.txtTramiteListaSimple.Name = "txtTramiteListaSimple";
             this.txtTramiteListaSimple.Size = new System.Drawing.Size(100, 20);
             this.txtTramiteListaSimple.TabIndex = 5;
+            this.txtTramiteListaSimple.TextChanged += new System.EventHandler(this.txtTramiteListaSimple_TextChanged);
             // 
             // txtNombreListaSimple
             // 
@@ -182,6 +188,7 @@
             this.txtNombreListaSimple.Name = "txtNombreListaSimple";
             this.txtNombreListaSimple.Size = new System.Drawing.Size(100, 20);
             this.txtNombreListaSimple.TabIndex = 4;
+            this.txtNombreListaSimple.TextChanged += new System.EventHandler(this.txtNombreListaSimple_TextChanged);
             // 
             // txtCodigoListaSimple
             // 
@@ -189,6 +196,7 @@
             this.txtCodigoListaSimple.Name = "txtCodigoListaSimple";
             this.txtCodigoListaSimple.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoListaSimple.TabIndex = 3;
+            this.txtCodigoListaSimple.TextChanged += new System.EventHandler(this.txtCodigoListaSimple_TextChanged);
             // 
             // lblTramiteNuevoElemento
             // 
@@ -239,7 +247,6 @@
             this.Name = "frmListaSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinámica Lineal - Lista Simple";
-            this.Load += new System.EventHandler(this.frmListaSimple_Load);
             this.gbListadoListaSimple.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).EndInit();
             this.gbElementoEliminadoListaSimple.ResumeLayout(false);
