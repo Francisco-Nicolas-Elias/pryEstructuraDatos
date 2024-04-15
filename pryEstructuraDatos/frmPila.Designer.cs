@@ -204,6 +204,7 @@
             // btnAgregarPila
             // 
             this.btnAgregarPila.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarPila.Enabled = false;
             this.btnAgregarPila.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarPila.Location = new System.Drawing.Point(9, 167);
             this.btnAgregarPila.Name = "btnAgregarPila";
@@ -219,6 +220,7 @@
             this.txtTramitePila.Name = "txtTramitePila";
             this.txtTramitePila.Size = new System.Drawing.Size(100, 20);
             this.txtTramitePila.TabIndex = 5;
+            this.txtTramitePila.TextChanged += new System.EventHandler(this.txtTramitePila_TextChanged);
             // 
             // txtNombrePila
             // 
@@ -226,6 +228,7 @@
             this.txtNombrePila.Name = "txtNombrePila";
             this.txtNombrePila.Size = new System.Drawing.Size(100, 20);
             this.txtNombrePila.TabIndex = 4;
+            this.txtNombrePila.TextChanged += new System.EventHandler(this.txtNombrePila_TextChanged);
             // 
             // txtCodigoPila
             // 
@@ -233,6 +236,7 @@
             this.txtCodigoPila.Name = "txtCodigoPila";
             this.txtCodigoPila.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoPila.TabIndex = 3;
+            this.txtCodigoPila.TextChanged += new System.EventHandler(this.txtCodigoPila_TextChanged);
             // 
             // lblTramiteNuevoElemento
             // 

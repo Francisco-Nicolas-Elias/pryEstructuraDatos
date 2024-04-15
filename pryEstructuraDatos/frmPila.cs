@@ -52,5 +52,41 @@ namespace pryEstructuraDatos
                 lblTramitePila.Text = "";
             }
         }
+
+        private void txtCodigoPila_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigoPila.Text != "" && txtNombrePila.Text != "" && txtTramitePila.Text != "")
+            {
+                btnAgregarPila.Enabled = true;
+            }
+            else
+            {
+                btnAgregarPila.Enabled = false;
+            }
+        }
+
+        private void txtNombrePila_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigoPila.Text != "" && txtNombrePila.Text != "" && txtTramitePila.Text != "")
+            {
+                btnAgregarPila.Enabled = true;
+            }
+            else
+            {
+                btnAgregarPila.Enabled = false;
+            }
+        }
+
+        private void txtTramitePila_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigoPila.Text != "" && txtNombrePila.Text != "" && txtTramitePila.Text != "")
+            {
+                btnAgregarPila.Enabled = true;
+            }
+            else
+            {
+                btnAgregarPila.Enabled = false;
+            }
+        }
     }
 }

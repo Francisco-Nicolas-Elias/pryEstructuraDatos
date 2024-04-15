@@ -49,6 +49,8 @@ namespace pryEstructuraDatos
             {
                 MessageBox.Show("La lista está vacía");
             }
+            cbCodigoListaSimple.Text = "";
+            btnEliminarListaSimple.Enabled = false;
         }
 
         private void txtCodigoListaSimple_TextChanged(object sender, EventArgs e)
