@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsCola.cs" />
+    <Compile Include="clsListaDoble.cs" />
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="clsPila.cs" />

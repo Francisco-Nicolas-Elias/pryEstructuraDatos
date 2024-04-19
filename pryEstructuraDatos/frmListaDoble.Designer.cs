@@ -47,8 +47,8 @@
             this.lblNombreNuevoElemento = new System.Windows.Forms.Label();
             this.lblCodNuevoElemento = new System.Windows.Forms.Label();
             this.gbListarDatosListaDoble = new System.Windows.Forms.GroupBox();
-            this.optAscendente = new System.Windows.Forms.RadioButton();
             this.optDescendente = new System.Windows.Forms.RadioButton();
+            this.optAscendente = new System.Windows.Forms.RadioButton();
             this.pbListaDoble = new System.Windows.Forms.PictureBox();
             this.gbListadoListaDoble.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).BeginInit();
@@ -120,15 +120,18 @@
             // cbCodigoListaDoble
             // 
             this.cbCodigoListaDoble.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbCodigoListaDoble.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCodigoListaDoble.FormattingEnabled = true;
             this.cbCodigoListaDoble.Location = new System.Drawing.Point(56, 24);
             this.cbCodigoListaDoble.Name = "cbCodigoListaDoble";
             this.cbCodigoListaDoble.Size = new System.Drawing.Size(121, 21);
             this.cbCodigoListaDoble.TabIndex = 7;
+            this.cbCodigoListaDoble.SelectedIndexChanged += new System.EventHandler(this.cbCodigoListaDoble_SelectedIndexChanged);
             // 
             // btnEliminarListaDoble
             // 
             this.btnEliminarListaDoble.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarListaDoble.Enabled = false;
             this.btnEliminarListaDoble.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarListaDoble.Location = new System.Drawing.Point(10, 51);
             this.btnEliminarListaDoble.Name = "btnEliminarListaDoble";
@@ -136,6 +139,7 @@
             this.btnEliminarListaDoble.TabIndex = 6;
             this.btnEliminarListaDoble.Text = "Eliminar";
             this.btnEliminarListaDoble.UseVisualStyleBackColor = true;
+            this.btnEliminarListaDoble.Click += new System.EventHandler(this.btnEliminarListaDoble_Click);
             // 
             // label4
             // 
@@ -165,6 +169,7 @@
             // btnAgregarListaDoble
             // 
             this.btnAgregarListaDoble.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarListaDoble.Enabled = false;
             this.btnAgregarListaDoble.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarListaDoble.Location = new System.Drawing.Point(6, 135);
             this.btnAgregarListaDoble.Name = "btnAgregarListaDoble";
@@ -172,6 +177,7 @@
             this.btnAgregarListaDoble.TabIndex = 6;
             this.btnAgregarListaDoble.Text = "Agregar";
             this.btnAgregarListaDoble.UseVisualStyleBackColor = true;
+            this.btnAgregarListaDoble.Click += new System.EventHandler(this.btnAgregarListaDoble_Click);
             // 
             // txtTramiteListaDoble
             // 
@@ -179,6 +185,7 @@
             this.txtTramiteListaDoble.Name = "txtTramiteListaDoble";
             this.txtTramiteListaDoble.Size = new System.Drawing.Size(100, 20);
             this.txtTramiteListaDoble.TabIndex = 5;
+            this.txtTramiteListaDoble.TextChanged += new System.EventHandler(this.txtTramiteListaDoble_TextChanged);
             // 
             // txtNombreListaDoble
             // 
@@ -186,6 +193,7 @@
             this.txtNombreListaDoble.Name = "txtNombreListaDoble";
             this.txtNombreListaDoble.Size = new System.Drawing.Size(100, 20);
             this.txtNombreListaDoble.TabIndex = 4;
+            this.txtNombreListaDoble.TextChanged += new System.EventHandler(this.txtNombreListaDoble_TextChanged);
             // 
             // txtCodigoListaDoble
             // 
@@ -193,6 +201,7 @@
             this.txtCodigoListaDoble.Name = "txtCodigoListaDoble";
             this.txtCodigoListaDoble.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoListaDoble.TabIndex = 3;
+            this.txtCodigoListaDoble.TextChanged += new System.EventHandler(this.txtCodigoListaDoble_TextChanged);
             // 
             // lblTramiteNuevoElemento
             // 
@@ -232,18 +241,6 @@
             this.gbListarDatosListaDoble.TabStop = false;
             this.gbListarDatosListaDoble.Text = "Listar Datos";
             // 
-            // optAscendente
-            // 
-            this.optAscendente.AutoSize = true;
-            this.optAscendente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.optAscendente.Location = new System.Drawing.Point(10, 28);
-            this.optAscendente.Name = "optAscendente";
-            this.optAscendente.Size = new System.Drawing.Size(82, 17);
-            this.optAscendente.TabIndex = 0;
-            this.optAscendente.TabStop = true;
-            this.optAscendente.Text = "Ascendente";
-            this.optAscendente.UseVisualStyleBackColor = true;
-            // 
             // optDescendente
             // 
             this.optDescendente.AutoSize = true;
@@ -255,6 +252,20 @@
             this.optDescendente.TabStop = true;
             this.optDescendente.Text = "Descendente";
             this.optDescendente.UseVisualStyleBackColor = true;
+            this.optDescendente.CheckedChanged += new System.EventHandler(this.optDescendente_CheckedChanged);
+            // 
+            // optAscendente
+            // 
+            this.optAscendente.AutoSize = true;
+            this.optAscendente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.optAscendente.Location = new System.Drawing.Point(10, 28);
+            this.optAscendente.Name = "optAscendente";
+            this.optAscendente.Size = new System.Drawing.Size(82, 17);
+            this.optAscendente.TabIndex = 0;
+            this.optAscendente.TabStop = true;
+            this.optAscendente.Text = "Ascendente";
+            this.optAscendente.UseVisualStyleBackColor = true;
+            this.optAscendente.CheckedChanged += new System.EventHandler(this.optAscendente_CheckedChanged);
             // 
             // pbListaDoble
             // 

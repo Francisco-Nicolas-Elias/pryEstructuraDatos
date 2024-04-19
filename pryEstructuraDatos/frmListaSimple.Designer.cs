@@ -116,6 +116,7 @@
             // cbCodigoListaSimple
             // 
             this.cbCodigoListaSimple.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbCodigoListaSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCodigoListaSimple.FormattingEnabled = true;
             this.cbCodigoListaSimple.Location = new System.Drawing.Point(56, 98);
             this.cbCodigoListaSimple.Name = "cbCodigoListaSimple";
