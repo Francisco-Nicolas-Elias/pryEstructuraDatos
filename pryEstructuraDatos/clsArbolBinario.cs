@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pryEstructuraDatos
 {
@@ -54,6 +55,44 @@ namespace pryEstructuraDatos
                 {
                     NodoPadre.Derecho = Nuevo;
                 }
+            }
+        }
+        public void RecorrerArbolBinario(DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            InOrderAsc(Grilla, Raiz);
+        }
+        public void InOrderAsc(DataGridView Dgv, clsNodo R)
+        {
+            if (R.Izquierdo != null)
+            {
+                InOrderAsc(Dgv, R.Izquierdo);
+            }
+
+            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
+
+            if (R.Derecho != null)
+            {
+                InOrderAsc(Dgv, R.Derecho);
+            }
+        }
+        public void RecorrerArbolBinario(ListBox Lista)
+        {
+            Lista.Items.Clear();
+            InOrderAsc(Lista, Raiz);
+        }
+        public void InOrderAsc(ListBox Lst, clsNodo R)
+        {
+            if (R.Izquierdo != null)
+            {
+                InOrderAsc(Lst, R.Izquierdo);
+            }
+
+            Lst.Items.Add(R.Codigo);
+
+            if (R.Derecho != null)
+            {
+                InOrderAsc(Lst, R.Derecho);
             }
         }
     }
