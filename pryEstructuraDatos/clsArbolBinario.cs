@@ -62,7 +62,7 @@ namespace pryEstructuraDatos
             Grilla.Rows.Clear();
             InOrderAsc(Grilla, Raiz);
         }
-        public void InOrderAsc(DataGridView Dgv, clsNodo R)
+        public void InOrderAsc(DataGridView Dgv, clsNodo R)//R = Raiz
         {
             if (R.Izquierdo != null)
             {
@@ -81,7 +81,7 @@ namespace pryEstructuraDatos
             Lista.Items.Clear();
             InOrderAsc(Lista, Raiz);
         }
-        public void InOrderAsc(ListBox Lst, clsNodo R)
+        public void InOrderAsc(ListBox Lst, clsNodo R)//R = Raiz
         {
             if (R.Izquierdo != null)
             {
@@ -93,6 +93,49 @@ namespace pryEstructuraDatos
             if (R.Derecho != null)
             {
                 InOrderAsc(Lst, R.Derecho);
+            }
+        }
+        public void RecorrerArbolBinario(TreeView tree)
+        {
+            tree.Nodes.Clear();
+            TreeNode NodoPadre = new TreeNode("Árbol");
+            tree.Nodes.Add(NodoPadre);
+            PreOrden(Raiz, NodoPadre);
+            tree.ExpandAll();
+        }
+
+        //Que esto se pase a un treeview
+        private void PreOrden(clsNodo R, TreeNode nodoTreeView)//R = Raiz 
+        {
+            TreeNode NodoPadre = new TreeNode(R.Codigo.ToString());
+            nodoTreeView.Nodes.Add(NodoPadre);
+            if(R.Izquierdo != null)
+            {
+                PreOrden(R.Izquierdo, NodoPadre);
+            }
+            if(R.Derecho != null)
+            {
+                PreOrden(R.Derecho, NodoPadre);
+            }
+        }
+
+        public void RecorrerArbolBinario(ComboBox Combo)
+        {
+            Combo.Items.Clear();
+            InOrderAsc(Combo, Raiz);
+        }
+        public void InOrderAsc(ComboBox cb, clsNodo R)//R = Raiz
+        {
+            if (R.Izquierdo != null)
+            {
+                InOrderAsc(cb, R.Izquierdo);
+            }
+
+            cb.Items.Add(R.Codigo);
+
+            if (R.Derecho != null)
+            {
+                InOrderAsc(cb, R.Derecho);
             }
         }
     }
