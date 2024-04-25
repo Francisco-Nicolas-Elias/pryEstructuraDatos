@@ -34,5 +34,53 @@ namespace pryEstructuraDatos
             txtNombreArbolBinario.Text = "";
             txtTramiteArbolBinario.Text = "";
         }
+
+        private void txtCodigoArbolBinario_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigoArbolBinario.Text != "" && txtNombreArbolBinario.Text != "" && txtTramiteArbolBinario.Text != "")
+            {
+                btnAgregarArbolBinario.Enabled = true;
+            }
+            else
+            {
+                btnAgregarArbolBinario.Enabled = false;
+            }
+        }
+
+        private void txtNombreArbolBinario_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigoArbolBinario.Text != "" && txtNombreArbolBinario.Text != "" && txtTramiteArbolBinario.Text != "")
+            {
+                btnAgregarArbolBinario.Enabled = true;
+            }
+            else
+            {
+                btnAgregarArbolBinario.Enabled = false;
+            }
+        }
+
+        private void txtTramiteArbolBinario_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigoArbolBinario.Text != "" && txtNombreArbolBinario.Text != "" && txtTramiteArbolBinario.Text != "")
+            {
+                btnAgregarArbolBinario.Enabled = true;
+            }
+            else
+            {
+                btnAgregarArbolBinario.Enabled = false;
+            }
+        }
+
+        private void cbCodigoArbolBinario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbCodigoArbolBinario.SelectedIndex != -1)
+            {
+                btnEliminarArbolBinario.Enabled = true;
+            }
+            else
+            {
+                btnEliminarArbolBinario.Enabled = false;
+            }
+        }
     }
 }

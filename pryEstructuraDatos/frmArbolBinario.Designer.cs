@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.gbListadoArbolBinario = new System.Windows.Forms.GroupBox();
+            this.optPostOrden = new System.Windows.Forms.RadioButton();
+            this.optPreOrden = new System.Windows.Forms.RadioButton();
+            this.optInOrdenDesc = new System.Windows.Forms.RadioButton();
+            this.optInOrdenAsc = new System.Windows.Forms.RadioButton();
             this.dgvArbolBinario = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,10 +50,6 @@
             this.lblNombreNuevoElemento = new System.Windows.Forms.Label();
             this.lblCodNuevoElemento = new System.Windows.Forms.Label();
             this.tvArbolBinario = new System.Windows.Forms.TreeView();
-            this.optInOrdenAsc = new System.Windows.Forms.RadioButton();
-            this.optInOrdenDesc = new System.Windows.Forms.RadioButton();
-            this.optPreOrden = new System.Windows.Forms.RadioButton();
-            this.optPostOrden = new System.Windows.Forms.RadioButton();
             this.btnEquilibrarArbolBinario = new System.Windows.Forms.Button();
             this.gbListadoArbolBinario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbolBinario)).BeginInit();
@@ -70,6 +70,50 @@
             this.gbListadoArbolBinario.TabIndex = 16;
             this.gbListadoArbolBinario.TabStop = false;
             this.gbListadoArbolBinario.Text = "Listado en una Lista y una Grilla";
+            // 
+            // optPostOrden
+            // 
+            this.optPostOrden.AutoSize = true;
+            this.optPostOrden.Location = new System.Drawing.Point(17, 133);
+            this.optPostOrden.Name = "optPostOrden";
+            this.optPostOrden.Size = new System.Drawing.Size(78, 17);
+            this.optPostOrden.TabIndex = 5;
+            this.optPostOrden.TabStop = true;
+            this.optPostOrden.Text = "Post-Orden";
+            this.optPostOrden.UseVisualStyleBackColor = true;
+            // 
+            // optPreOrden
+            // 
+            this.optPreOrden.AutoSize = true;
+            this.optPreOrden.Location = new System.Drawing.Point(17, 100);
+            this.optPreOrden.Name = "optPreOrden";
+            this.optPreOrden.Size = new System.Drawing.Size(73, 17);
+            this.optPreOrden.TabIndex = 4;
+            this.optPreOrden.TabStop = true;
+            this.optPreOrden.Text = "Pre-Orden";
+            this.optPreOrden.UseVisualStyleBackColor = true;
+            // 
+            // optInOrdenDesc
+            // 
+            this.optInOrdenDesc.AutoSize = true;
+            this.optInOrdenDesc.Location = new System.Drawing.Point(17, 67);
+            this.optInOrdenDesc.Name = "optInOrdenDesc";
+            this.optInOrdenDesc.Size = new System.Drawing.Size(133, 17);
+            this.optInOrdenDesc.TabIndex = 3;
+            this.optInOrdenDesc.TabStop = true;
+            this.optInOrdenDesc.Text = "In-Orden Descendente";
+            this.optInOrdenDesc.UseVisualStyleBackColor = true;
+            // 
+            // optInOrdenAsc
+            // 
+            this.optInOrdenAsc.AutoSize = true;
+            this.optInOrdenAsc.Location = new System.Drawing.Point(17, 34);
+            this.optInOrdenAsc.Name = "optInOrdenAsc";
+            this.optInOrdenAsc.Size = new System.Drawing.Size(126, 17);
+            this.optInOrdenAsc.TabIndex = 2;
+            this.optInOrdenAsc.TabStop = true;
+            this.optInOrdenAsc.Text = "In-Orden Ascendente";
+            this.optInOrdenAsc.UseVisualStyleBackColor = true;
             // 
             // dgvArbolBinario
             // 
@@ -120,6 +164,7 @@
             this.cbCodigoArbolBinario.Name = "cbCodigoArbolBinario";
             this.cbCodigoArbolBinario.Size = new System.Drawing.Size(121, 21);
             this.cbCodigoArbolBinario.TabIndex = 7;
+            this.cbCodigoArbolBinario.SelectedIndexChanged += new System.EventHandler(this.cbCodigoArbolBinario_SelectedIndexChanged);
             // 
             // btnEliminarArbolBinario
             // 
@@ -177,6 +222,7 @@
             this.txtTramiteArbolBinario.Name = "txtTramiteArbolBinario";
             this.txtTramiteArbolBinario.Size = new System.Drawing.Size(100, 20);
             this.txtTramiteArbolBinario.TabIndex = 5;
+            this.txtTramiteArbolBinario.TextChanged += new System.EventHandler(this.txtTramiteArbolBinario_TextChanged);
             // 
             // txtNombreArbolBinario
             // 
@@ -184,6 +230,7 @@
             this.txtNombreArbolBinario.Name = "txtNombreArbolBinario";
             this.txtNombreArbolBinario.Size = new System.Drawing.Size(100, 20);
             this.txtNombreArbolBinario.TabIndex = 4;
+            this.txtNombreArbolBinario.TextChanged += new System.EventHandler(this.txtNombreArbolBinario_TextChanged);
             // 
             // txtCodigoArbolBinario
             // 
@@ -191,6 +238,7 @@
             this.txtCodigoArbolBinario.Name = "txtCodigoArbolBinario";
             this.txtCodigoArbolBinario.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoArbolBinario.TabIndex = 3;
+            this.txtCodigoArbolBinario.TextChanged += new System.EventHandler(this.txtCodigoArbolBinario_TextChanged);
             // 
             // lblTramiteNuevoElemento
             // 
@@ -226,52 +274,9 @@
             this.tvArbolBinario.Size = new System.Drawing.Size(197, 197);
             this.tvArbolBinario.TabIndex = 18;
             // 
-            // optInOrdenAsc
-            // 
-            this.optInOrdenAsc.AutoSize = true;
-            this.optInOrdenAsc.Location = new System.Drawing.Point(17, 34);
-            this.optInOrdenAsc.Name = "optInOrdenAsc";
-            this.optInOrdenAsc.Size = new System.Drawing.Size(126, 17);
-            this.optInOrdenAsc.TabIndex = 2;
-            this.optInOrdenAsc.TabStop = true;
-            this.optInOrdenAsc.Text = "In-Orden Ascendente";
-            this.optInOrdenAsc.UseVisualStyleBackColor = true;
-            // 
-            // optInOrdenDesc
-            // 
-            this.optInOrdenDesc.AutoSize = true;
-            this.optInOrdenDesc.Location = new System.Drawing.Point(17, 67);
-            this.optInOrdenDesc.Name = "optInOrdenDesc";
-            this.optInOrdenDesc.Size = new System.Drawing.Size(133, 17);
-            this.optInOrdenDesc.TabIndex = 3;
-            this.optInOrdenDesc.TabStop = true;
-            this.optInOrdenDesc.Text = "In-Orden Descendente";
-            this.optInOrdenDesc.UseVisualStyleBackColor = true;
-            // 
-            // optPreOrden
-            // 
-            this.optPreOrden.AutoSize = true;
-            this.optPreOrden.Location = new System.Drawing.Point(17, 100);
-            this.optPreOrden.Name = "optPreOrden";
-            this.optPreOrden.Size = new System.Drawing.Size(73, 17);
-            this.optPreOrden.TabIndex = 4;
-            this.optPreOrden.TabStop = true;
-            this.optPreOrden.Text = "Pre-Orden";
-            this.optPreOrden.UseVisualStyleBackColor = true;
-            // 
-            // optPostOrden
-            // 
-            this.optPostOrden.AutoSize = true;
-            this.optPostOrden.Location = new System.Drawing.Point(17, 133);
-            this.optPostOrden.Name = "optPostOrden";
-            this.optPostOrden.Size = new System.Drawing.Size(78, 17);
-            this.optPostOrden.TabIndex = 5;
-            this.optPostOrden.TabStop = true;
-            this.optPostOrden.Text = "Post-Orden";
-            this.optPostOrden.UseVisualStyleBackColor = true;
-            // 
             // btnEquilibrarArbolBinario
             // 
+            this.btnEquilibrarArbolBinario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEquilibrarArbolBinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEquilibrarArbolBinario.Location = new System.Drawing.Point(450, 152);
             this.btnEquilibrarArbolBinario.Name = "btnEquilibrarArbolBinario";
