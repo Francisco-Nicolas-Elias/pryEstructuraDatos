@@ -61,39 +61,75 @@ namespace pryEstructuraDatos
         public void RecorrerArbolBinario(DataGridView Grilla)
         {
             Grilla.Rows.Clear();
-            InOrderAsc(Grilla, Raiz);
+            InOrdenAsc(Grilla, Raiz);
         }
-        public void InOrderAsc(DataGridView Dgv, clsNodo R)//R = Raiz
+        public void InOrdenAsc(DataGridView Dgv, clsNodo R)//R = Raiz
         {
+            //Pregunta si hay algo a la izquierda
             if (R.Izquierdo != null)
             {
-                InOrderAsc(Dgv, R.Izquierdo);
+                InOrdenAsc(Dgv, R.Izquierdo);
             }
 
             Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
 
+            //Pregunta si hay algo a la derecha
             if (R.Derecho != null)
             {
-                InOrderAsc(Dgv, R.Derecho);
+                InOrdenAsc(Dgv, R.Derecho);
+            }
+        }
+        public void InOrdenDesc(DataGridView Dgv, clsNodo R)//R = Raíz 
+        {
+            //Pregunta si hay algo a la derecha
+            if (R.Derecho != null)
+            {
+                InOrdenAsc(Dgv, R.Derecho);
+            }
+
+            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
+
+            //Pregunta si hay algo a la izquierda
+            if (R.Izquierdo != null)
+            {
+                InOrdenAsc(Dgv, R.Izquierdo);
             }
         }
         public void RecorrerArbolBinario(ListBox Lista)
         {
             Lista.Items.Clear();
-            InOrderAsc(Lista, Raiz);
+            InOrdenAsc(Lista, Raiz);
         }
-        public void InOrderAsc(ListBox Lst, clsNodo R)//R = Raiz
+        public void InOrdenAsc(ListBox Lst, clsNodo R)//R = Raiz
         {
+            //Pregunta si hay algo a la izquierda
             if (R.Izquierdo != null)
             {
-                InOrderAsc(Lst, R.Izquierdo);
+                InOrdenAsc(Lst, R.Izquierdo);
             }
 
             Lst.Items.Add(R.Codigo);
 
+            //Pregunta si hay algo a la derecha
             if (R.Derecho != null)
             {
-                InOrderAsc(Lst, R.Derecho);
+                InOrdenAsc(Lst, R.Derecho);
+            }
+        }
+        public void InOrdenDesc(ListBox Lst, clsNodo R)//R = Raiz
+        {
+            //Pregunta si hay algo a la derecha
+            if (R.Derecho != null)
+            {
+                InOrdenAsc(Lst, R.Derecho);
+            }
+
+            Lst.Items.Add(R.Codigo);
+
+            //Pregunta si hay algo a la izquierda
+            if (R.Izquierdo != null)
+            {
+                InOrdenAsc(Lst, R.Izquierdo);
             }
         }
         public void RecorrerArbolBinario(TreeView tree)
@@ -109,12 +145,17 @@ namespace pryEstructuraDatos
         private void PreOrden(clsNodo R, TreeNode nodoTreeView)//R = Raiz 
         {
             TreeNode NodoPadre = new TreeNode(R.Codigo.ToString());
+
             nodoTreeView.Nodes.Add(NodoPadre);
-            if(R.Izquierdo != null)
+
+            //Pregunta si hay algo a la izquierda
+            if (R.Izquierdo != null)
             {
                 PreOrden(R.Izquierdo, NodoPadre);
             }
-            if(R.Derecho != null)
+
+            //Pregunta si hay algo a la derecha
+            if (R.Derecho != null)
             {
                 PreOrden(R.Derecho, NodoPadre);
             }
@@ -123,20 +164,38 @@ namespace pryEstructuraDatos
         public void RecorrerArbolBinario(ComboBox Combo)
         {
             Combo.Items.Clear();
-            InOrderAsc(Combo, Raiz);
+            InOrdenAsc(Combo, Raiz);
         }
-        public void InOrderAsc(ComboBox cb, clsNodo R)//R = Raiz
+        public void InOrdenAsc(ComboBox cb, clsNodo R)//R = Raiz
         {
+            //Pregunta si hay algo a la izquierda
             if (R.Izquierdo != null)
             {
-                InOrderAsc(cb, R.Izquierdo);
+                InOrdenAsc(cb, R.Izquierdo);
             }
 
             cb.Items.Add(R.Codigo);
 
+            //Pregunta si hay algo a la derecha
             if (R.Derecho != null)
             {
-                InOrderAsc(cb, R.Derecho);
+                InOrdenAsc(cb, R.Derecho);
+            }
+        }
+        public void InOrdenDesc(ComboBox cb, clsNodo R)//R = Raíz
+        {
+            //Pregunta si hay algo a la derecha
+            if (R.Derecho != null)
+            {
+                InOrdenAsc(cb, R.Derecho);
+            }
+
+            cb.Items.Add(R.Codigo);
+
+            //Pregunta si hay algo a la izquierda
+            if (R.Izquierdo != null)
+            {
+                InOrdenAsc(cb, R.Izquierdo);
             }
         }
     }
