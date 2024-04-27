@@ -82,5 +82,17 @@ namespace pryEstructuraDatos
                 btnEliminarArbolBinario.Enabled = false;
             }
         }
+
+        private void optInOrdenDesc_CheckedChanged(object sender, EventArgs e)
+        {
+            Arbol.RecorrerArbolDesc(dgvArbolBinario);
+            Arbol.RecorrerArbolDesc(cbCodigoArbolBinario);
+        }
+
+        private void optInOrdenAsc_CheckedChanged(object sender, EventArgs e)
+        {
+            Arbol.RecorrerArbolBinario(dgvArbolBinario);
+            Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
+        }
     }
 }

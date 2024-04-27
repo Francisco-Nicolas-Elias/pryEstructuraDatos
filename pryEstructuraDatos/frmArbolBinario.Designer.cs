@@ -103,6 +103,7 @@
             this.optInOrdenDesc.TabStop = true;
             this.optInOrdenDesc.Text = "In-Orden Descendente";
             this.optInOrdenDesc.UseVisualStyleBackColor = true;
+            this.optInOrdenDesc.CheckedChanged += new System.EventHandler(this.optInOrdenDesc_CheckedChanged);
             // 
             // optInOrdenAsc
             // 
@@ -114,6 +115,7 @@
             this.optInOrdenAsc.TabStop = true;
             this.optInOrdenAsc.Text = "In-Orden Ascendente";
             this.optInOrdenAsc.UseVisualStyleBackColor = true;
+            this.optInOrdenAsc.CheckedChanged += new System.EventHandler(this.optInOrdenAsc_CheckedChanged);
             // 
             // dgvArbolBinario
             // 

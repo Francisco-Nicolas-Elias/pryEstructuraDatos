@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -79,12 +80,18 @@ namespace pryEstructuraDatos
                 InOrdenAsc(Dgv, R.Derecho);
             }
         }
+
+        public void RecorrerArbolDesc(DataGridView dgv)
+        {
+            dgv.Rows.Clear();
+            InOrdenDesc(dgv, Raiz);
+        }
         public void InOrdenDesc(DataGridView Dgv, clsNodo R)//R = Raíz 
         {
             //Pregunta si hay algo a la derecha
             if (R.Derecho != null)
             {
-                InOrdenAsc(Dgv, R.Derecho);
+                InOrdenDesc(Dgv, R.Derecho);
             }
 
             Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
@@ -92,7 +99,7 @@ namespace pryEstructuraDatos
             //Pregunta si hay algo a la izquierda
             if (R.Izquierdo != null)
             {
-                InOrdenAsc(Dgv, R.Izquierdo);
+                InOrdenDesc(Dgv, R.Izquierdo);
             }
         }
         public void RecorrerArbolBinario(ListBox Lista)
@@ -116,12 +123,19 @@ namespace pryEstructuraDatos
                 InOrdenAsc(Lst, R.Derecho);
             }
         }
+
+        public void RecorrerArbolDesc(ListBox Lst)
+        {
+            Lst.Items.Clear();
+            InOrdenDesc(Lst, Raiz);
+        }
+
         public void InOrdenDesc(ListBox Lst, clsNodo R)//R = Raiz
         {
             //Pregunta si hay algo a la derecha
             if (R.Derecho != null)
             {
-                InOrdenAsc(Lst, R.Derecho);
+                InOrdenDesc(Lst, R.Derecho);
             }
 
             Lst.Items.Add(R.Codigo);
@@ -129,7 +143,7 @@ namespace pryEstructuraDatos
             //Pregunta si hay algo a la izquierda
             if (R.Izquierdo != null)
             {
-                InOrdenAsc(Lst, R.Izquierdo);
+                InOrdenDesc(Lst, R.Izquierdo);
             }
         }
         public void RecorrerArbolBinario(TreeView tree)
@@ -182,12 +196,19 @@ namespace pryEstructuraDatos
                 InOrdenAsc(cb, R.Derecho);
             }
         }
+
+        public void RecorrerArbolDesc(ComboBox cb)
+        {
+            cb.Items.Clear();
+            InOrdenDesc(cb, Raiz);
+        }
+
         public void InOrdenDesc(ComboBox cb, clsNodo R)//R = Raíz
         {
             //Pregunta si hay algo a la derecha
             if (R.Derecho != null)
             {
-                InOrdenAsc(cb, R.Derecho);
+                InOrdenDesc(cb, R.Derecho);
             }
 
             cb.Items.Add(R.Codigo);
@@ -195,7 +216,7 @@ namespace pryEstructuraDatos
             //Pregunta si hay algo a la izquierda
             if (R.Izquierdo != null)
             {
-                InOrdenAsc(cb, R.Izquierdo);
+                InOrdenDesc(cb, R.Izquierdo);
             }
         }
     }
