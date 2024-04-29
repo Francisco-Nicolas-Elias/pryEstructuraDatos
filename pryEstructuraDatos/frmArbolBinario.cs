@@ -120,6 +120,8 @@ namespace pryEstructuraDatos
         private void btnEquilibrarArbolBinario_Click(object sender, EventArgs e)
         {
             Arbol.Equilibrar();
+            Arbol.RecorrerArbolBinario(dgvArbolBinario);
+            Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
         }
     }
 }
