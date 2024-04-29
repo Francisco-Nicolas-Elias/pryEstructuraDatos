@@ -94,5 +94,32 @@ namespace pryEstructuraDatos
             Arbol.RecorrerArbolBinario(dgvArbolBinario);
             Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
         }
+
+        private void optPreOrden_CheckedChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnEliminarArbolBinario_Click(object sender, EventArgs e)
+        {
+            if (Arbol.Raiz != null)
+            {
+                Int32 x = Convert.ToInt32(cbCodigoArbolBinario.Text);
+                Arbol.Eliminar(x);
+                Arbol.RecorrerArbolBinario(dgvArbolBinario);
+                Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
+            }
+            else
+            {
+                MessageBox.Show("La lista está vacía");
+            }
+            cbCodigoArbolBinario.Text = "";
+            btnEliminarArbolBinario.Enabled = false;
+        }
+
+        private void btnEquilibrarArbolBinario_Click(object sender, EventArgs e)
+        {
+            Arbol.Equilibrar();
+        }
     }
 }

@@ -92,6 +92,7 @@
             this.optPreOrden.TabStop = true;
             this.optPreOrden.Text = "Pre-Orden";
             this.optPreOrden.UseVisualStyleBackColor = true;
+            this.optPreOrden.CheckedChanged += new System.EventHandler(this.optPreOrden_CheckedChanged);
             // 
             // optInOrdenDesc
             // 
@@ -179,6 +180,7 @@
             this.btnEliminarArbolBinario.TabIndex = 6;
             this.btnEliminarArbolBinario.Text = "Eliminar";
             this.btnEliminarArbolBinario.UseVisualStyleBackColor = true;
+            this.btnEliminarArbolBinario.Click += new System.EventHandler(this.btnEliminarArbolBinario_Click);
             // 
             // label4
             // 
@@ -286,6 +288,7 @@
             this.btnEquilibrarArbolBinario.TabIndex = 19;
             this.btnEquilibrarArbolBinario.Text = "Equilibrar";
             this.btnEquilibrarArbolBinario.UseVisualStyleBackColor = true;
+            this.btnEquilibrarArbolBinario.Click += new System.EventHandler(this.btnEquilibrarArbolBinario_Click);
             // 
             // frmArbolBinario
             // 
