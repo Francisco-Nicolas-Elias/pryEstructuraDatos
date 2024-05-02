@@ -100,9 +100,9 @@ namespace pryEstructuraDatos
 
         private void optPreOrden_CheckedChanged(object sender, EventArgs e)
         {
+            Arbol.RecorrerArbolPreOrden(dgvArbolBinario);
             Arbol.RecorrerArbolPreOrden(cbCodigoArbolBinario);
             Arbol.RecorrerArbolPreOrden(lstArbolBinario);
-            Arbol.RecorrerArbolPreOrden(dgvArbolBinario);
         }
 
         private void btnEliminarArbolBinario_Click(object sender, EventArgs e)
@@ -129,6 +129,13 @@ namespace pryEstructuraDatos
             Arbol.RecorrerArbolBinario(dgvArbolBinario);
             Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
             Arbol.RecorrerArbolBinario(lstArbolBinario);
+        }
+
+        private void optPostOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            Arbol.RecorrerArbolPostOrden(dgvArbolBinario);
+            Arbol.RecorrerArbolPostOrden(cbCodigoArbolBinario);
+            Arbol.RecorrerArbolPostOrden(lstArbolBinario);
         }
     }
 }

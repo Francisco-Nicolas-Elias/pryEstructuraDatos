@@ -83,6 +83,7 @@
             this.optPostOrden.TabStop = true;
             this.optPostOrden.Text = "Post-Orden";
             this.optPostOrden.UseVisualStyleBackColor = true;
+            this.optPostOrden.CheckedChanged += new System.EventHandler(this.optPostOrden_CheckedChanged);
             // 
             // optPreOrden
             // 
