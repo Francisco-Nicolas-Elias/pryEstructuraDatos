@@ -51,6 +51,7 @@
             this.lblCodNuevoElemento = new System.Windows.Forms.Label();
             this.tvArbolBinario = new System.Windows.Forms.TreeView();
             this.btnEquilibrarArbolBinario = new System.Windows.Forms.Button();
+            this.lstArbolBinario = new System.Windows.Forms.ListBox();
             this.gbListadoArbolBinario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbolBinario)).BeginInit();
             this.gbElementoEliminadoArbolBinario.SuspendLayout();
@@ -59,6 +60,7 @@
             // 
             // gbListadoArbolBinario
             // 
+            this.gbListadoArbolBinario.Controls.Add(this.lstArbolBinario);
             this.gbListadoArbolBinario.Controls.Add(this.optPostOrden);
             this.gbListadoArbolBinario.Controls.Add(this.optPreOrden);
             this.gbListadoArbolBinario.Controls.Add(this.optInOrdenDesc);
@@ -66,7 +68,7 @@
             this.gbListadoArbolBinario.Controls.Add(this.dgvArbolBinario);
             this.gbListadoArbolBinario.Location = new System.Drawing.Point(12, 235);
             this.gbListadoArbolBinario.Name = "gbListadoArbolBinario";
-            this.gbListadoArbolBinario.Size = new System.Drawing.Size(627, 200);
+            this.gbListadoArbolBinario.Size = new System.Drawing.Size(825, 200);
             this.gbListadoArbolBinario.TabIndex = 16;
             this.gbListadoArbolBinario.TabStop = false;
             this.gbListadoArbolBinario.Text = "Listado en una Lista y una Grilla";
@@ -290,11 +292,19 @@
             this.btnEquilibrarArbolBinario.UseVisualStyleBackColor = true;
             this.btnEquilibrarArbolBinario.Click += new System.EventHandler(this.btnEquilibrarArbolBinario_Click);
             // 
+            // lstArbolBinario
+            // 
+            this.lstArbolBinario.FormattingEnabled = true;
+            this.lstArbolBinario.Location = new System.Drawing.Point(653, 19);
+            this.lstArbolBinario.Name = "lstArbolBinario";
+            this.lstArbolBinario.Size = new System.Drawing.Size(166, 173);
+            this.lstArbolBinario.TabIndex = 20;
+            // 
             // frmArbolBinario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 450);
+            this.ClientSize = new System.Drawing.Size(843, 450);
             this.Controls.Add(this.btnEquilibrarArbolBinario);
             this.Controls.Add(this.tvArbolBinario);
             this.Controls.Add(this.gbListadoArbolBinario);
@@ -338,5 +348,6 @@
         private System.Windows.Forms.Label lblCodNuevoElemento;
         private System.Windows.Forms.TreeView tvArbolBinario;
         private System.Windows.Forms.Button btnEquilibrarArbolBinario;
+        private System.Windows.Forms.ListBox lstArbolBinario;
     }
 }

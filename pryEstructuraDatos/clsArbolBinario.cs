@@ -102,6 +102,28 @@ namespace pryEstructuraDatos
                 InOrdenDesc(Dgv, R.Izquierdo);
             }
         }
+        public void RecorrerArbolPreOrden(DataGridView dgv)
+        {
+            dgv.Rows.Clear();
+            PreOrden(dgv, Raiz);
+        }
+
+        public void PreOrden(DataGridView dgv, clsNodo R) //R = Raiz
+        {
+            dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite); //Agrega el nodo raíz primero
+
+            //Luego recorre el subárbol izquierdo si existe
+            if (R.Izquierdo != null)
+            {
+                PreOrden(dgv, R.Izquierdo);
+            }
+
+            //Finalmente, recorre el subárbol derecho si existe
+            if (R.Derecho != null)
+            {
+                PreOrden(dgv, R.Derecho);
+            }
+        }
         public void RecorrerArbolBinario(ListBox Lista)
         {
             Lista.Items.Clear();
@@ -144,6 +166,27 @@ namespace pryEstructuraDatos
             if (R.Izquierdo != null)
             {
                 InOrdenDesc(Lst, R.Izquierdo);
+            }
+        }
+        public void RecorrerArbolPreOrden(ListBox lst)
+        {
+            lst.Items.Clear();
+            PreOrden(lst, Raiz);
+        }
+        public void PreOrden(ListBox lst, clsNodo R) //R = Raiz
+        {
+            lst.Items.Add(R.Codigo); //Agrega el nodo raíz primero
+
+            //Luego recorre el subárbol izquierdo si existe
+            if (R.Izquierdo != null)
+            {
+                PreOrden(lst, R.Izquierdo);
+            }
+
+            //Finalmente, recorre el subárbol derecho si existe
+            if (R.Derecho != null)
+            {
+                PreOrden(lst, R.Derecho);
             }
         }
         public void RecorrerArbolBinario(TreeView tree)
@@ -217,6 +260,27 @@ namespace pryEstructuraDatos
             if (R.Izquierdo != null)
             {
                 InOrdenDesc(cb, R.Izquierdo);
+            }
+        }
+        public void RecorrerArbolPreOrden(ComboBox cb)
+        {
+            cb.Items.Clear();
+            PreOrden(cb, Raiz);
+        }
+        public void PreOrden(ComboBox cb, clsNodo R) //R = Raiz
+        {
+            cb.Items.Add(R.Codigo); //Agrega el nodo raíz primero
+
+            //Luego recorre el subárbol izquierdo si existe
+            if (R.Izquierdo != null)
+            {
+                PreOrden(cb, R.Izquierdo);
+            }
+
+            //Finalmente, recorre el subárbol derecho si existe
+            if (R.Derecho != null)
+            {
+                PreOrden(cb, R.Derecho);
             }
         }
 

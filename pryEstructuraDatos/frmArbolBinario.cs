@@ -29,6 +29,7 @@ namespace pryEstructuraDatos
             Arbol.RecorrerArbolBinario(dgvArbolBinario);
             Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
             Arbol.RecorrerArbolBinario(tvArbolBinario);
+            Arbol.RecorrerArbolBinario(lstArbolBinario);
             //Arbol.RecorrerListaDoble();//Falta programar crear el csv
             txtCodigoArbolBinario.Text = "";
             txtNombreArbolBinario.Text = "";
@@ -87,17 +88,21 @@ namespace pryEstructuraDatos
         {
             Arbol.RecorrerArbolDesc(dgvArbolBinario);
             Arbol.RecorrerArbolDesc(cbCodigoArbolBinario);
+            Arbol.RecorrerArbolDesc(lstArbolBinario);
         }
 
         private void optInOrdenAsc_CheckedChanged(object sender, EventArgs e)
         {
             Arbol.RecorrerArbolBinario(dgvArbolBinario);
             Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
+            Arbol.RecorrerArbolBinario(lstArbolBinario);
         }
 
         private void optPreOrden_CheckedChanged(object sender, EventArgs e)
         {
-           
+            Arbol.RecorrerArbolPreOrden(cbCodigoArbolBinario);
+            Arbol.RecorrerArbolPreOrden(lstArbolBinario);
+            Arbol.RecorrerArbolPreOrden(dgvArbolBinario);
         }
 
         private void btnEliminarArbolBinario_Click(object sender, EventArgs e)
@@ -108,6 +113,7 @@ namespace pryEstructuraDatos
                 Arbol.Eliminar(x);
                 Arbol.RecorrerArbolBinario(dgvArbolBinario);
                 Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
+                Arbol.RecorrerArbolBinario(lstArbolBinario);
             }
             else
             {
@@ -122,6 +128,7 @@ namespace pryEstructuraDatos
             Arbol.Equilibrar();
             Arbol.RecorrerArbolBinario(dgvArbolBinario);
             Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
+            Arbol.RecorrerArbolBinario(lstArbolBinario);
         }
     }
 }
