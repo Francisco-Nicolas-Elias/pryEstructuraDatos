@@ -114,10 +114,11 @@ namespace pryEstructuraDatos
                 Arbol.RecorrerArbolBinario(dgvArbolBinario);
                 Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
                 Arbol.RecorrerArbolBinario(lstArbolBinario);
+                Arbol.RecorrerArbolBinario(tvArbolBinario);
             }
             else
             {
-                MessageBox.Show("La lista está vacía");
+                MessageBox.Show("El árbol esta vacío.");
             }
             cbCodigoArbolBinario.Text = "";
             btnEliminarArbolBinario.Enabled = false;
@@ -126,9 +127,10 @@ namespace pryEstructuraDatos
         private void btnEquilibrarArbolBinario_Click(object sender, EventArgs e)
         {
             Arbol.Equilibrar();
-            Arbol.RecorrerArbolBinario(dgvArbolBinario);
-            Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
-            Arbol.RecorrerArbolBinario(lstArbolBinario);
+            //Arbol.RecorrerArbolBinario(dgvArbolBinario);
+            Arbol.RecorrerArbolBinario(tvArbolBinario);
+            //Arbol.RecorrerArbolBinario(lstArbolBinario);
+            //Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
         }
 
         private void optPostOrden_CheckedChanged(object sender, EventArgs e)

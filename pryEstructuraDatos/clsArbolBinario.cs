@@ -394,20 +394,6 @@ namespace pryEstructuraDatos
             EquilibrarArbol(0, i - 1);
         }
 
-        private void GrabarVectorInOrden(clsNodo NodoPadre)
-        {
-            if (NodoPadre.Izquierdo != null)
-            {
-                GrabarVectorInOrden(NodoPadre.Izquierdo);
-            }
-            Vector[i] = NodoPadre;
-            i = i + 1;
-            if(NodoPadre.Derecho != null)
-            {
-                GrabarVectorInOrden(NodoPadre.Derecho);
-            }
-        }
-
         private void EquilibrarArbol(Int32 ini, Int32 fin)
         {
             Int32 m = (ini + fin) / 2;
@@ -419,28 +405,45 @@ namespace pryEstructuraDatos
             }
         }
 
-        public void Eliminar(Int32 codigo)
-        {
-            i = 0;
-            GrabarVectorInOrden(Raiz, codigo);
-            EquilibrarArbol(0, i - 1);
-        }
-
         private void GrabarVectorInOrden(clsNodo NodoPadre, Int32 Codigo)
         {
             if (NodoPadre.Izquierdo != null)
             {
                 GrabarVectorInOrden(NodoPadre.Izquierdo, Codigo);
             }
-            if(NodoPadre.Codigo != Codigo)
+            if (NodoPadre.Codigo != Codigo)
             {
                 Vector[i] = NodoPadre;
                 i = i + 1;
             }
-            if(NodoPadre.Derecho != null)
+            if (NodoPadre.Derecho != null)
             {
                 GrabarVectorInOrden(NodoPadre.Derecho, Codigo);
             }
         }
+
+        private void GrabarVectorInOrden(clsNodo NodoPadre)
+        {
+            if (NodoPadre.Izquierdo != null)
+            {
+                GrabarVectorInOrden(NodoPadre.Izquierdo);
+            }
+
+            Vector[i] = NodoPadre;
+            i = i + 1;
+
+            if(NodoPadre.Derecho != null)
+            {
+                GrabarVectorInOrden(NodoPadre.Derecho);
+            }
+        }
+
+        public void Eliminar(Int32 codigo)
+        {
+            i = 0;
+            GrabarVectorInOrden(Raiz, codigo);
+            Raiz = null;
+            EquilibrarArbol(0, i - 1);
+        }        
     }
 }
