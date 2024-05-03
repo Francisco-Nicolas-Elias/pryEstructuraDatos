@@ -101,7 +101,6 @@ namespace pryEstructuraDatos
         private void optPreOrden_CheckedChanged(object sender, EventArgs e)
         {
             Arbol.RecorrerArbolPreOrden(dgvArbolBinario);
-            Arbol.RecorrerArbolPreOrden(cbCodigoArbolBinario);
             Arbol.RecorrerArbolPreOrden(lstArbolBinario);
         }
 
@@ -127,16 +126,12 @@ namespace pryEstructuraDatos
         private void btnEquilibrarArbolBinario_Click(object sender, EventArgs e)
         {
             Arbol.Equilibrar();
-            //Arbol.RecorrerArbolBinario(dgvArbolBinario);
             Arbol.RecorrerArbolBinario(tvArbolBinario);
-            //Arbol.RecorrerArbolBinario(lstArbolBinario);
-            //Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
         }
 
         private void optPostOrden_CheckedChanged(object sender, EventArgs e)
         {
             Arbol.RecorrerArbolPostOrden(dgvArbolBinario);
-            Arbol.RecorrerArbolPostOrden(cbCodigoArbolBinario);
             Arbol.RecorrerArbolPostOrden(lstArbolBinario);
         }
     }
