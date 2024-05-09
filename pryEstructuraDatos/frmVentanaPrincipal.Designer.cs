@@ -146,7 +146,7 @@
             // árbolBinarioToolStripMenuItem
             // 
             this.árbolBinarioToolStripMenuItem.Name = "árbolBinarioToolStripMenuItem";
-            this.árbolBinarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.árbolBinarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.árbolBinarioToolStripMenuItem.Text = "Árbol Binario...";
             this.árbolBinarioToolStripMenuItem.Click += new System.EventHandler(this.árbolBinarioToolStripMenuItem_Click);
             // 
@@ -182,6 +182,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::pryEstructuraDatos.Properties.Resources.Fondo_De_Pantalla;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(749, 408);
             this.Controls.Add(this.mnsMenuPrincipal);
             this.MainMenuStrip = this.mnsMenuPrincipal;

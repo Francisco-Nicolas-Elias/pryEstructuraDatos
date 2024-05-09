@@ -32,6 +32,9 @@ namespace pryEstructuraDatos
             txtCodigoListaDoble.Text = "";
             txtNombreListaDoble.Text = "";
             txtTramiteListaDoble.Text = "";
+
+            optAscendente.Checked = false;
+            optDescendente.Checked = false;
         }
 
         private void btnEliminarListaDoble_Click(object sender, EventArgs e)
@@ -44,6 +47,9 @@ namespace pryEstructuraDatos
                 Lista.RecorrerListaDoble(lstListaDoble);
                 Lista.RecorrerListaDoble(cbCodigoListaDoble);
                 Lista.RecorrerListaDoble();
+
+                optAscendente.Checked = false;
+                optDescendente.Checked = false;
             }
             else
             {
