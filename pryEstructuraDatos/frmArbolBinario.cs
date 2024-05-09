@@ -30,12 +30,10 @@ namespace pryEstructuraDatos
             Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
             Arbol.RecorrerArbolBinario(tvArbolBinario);
             Arbol.RecorrerArbolBinario(lstArbolBinario);
-            //Arbol.RecorrerListaDoble();//Falta programar crear el csv
             txtCodigoArbolBinario.Text = "";
             txtNombreArbolBinario.Text = "";
             txtTramiteArbolBinario.Text = "";
 
-            //optInOrdenAsc.Checked = false;
             optInOrdenDesc.Checked = false;
             optPreOrden.Checked = false;
             optPostOrden.Checked = false;
@@ -136,6 +134,10 @@ namespace pryEstructuraDatos
         {
             Arbol.Equilibrar();
             Arbol.RecorrerArbolBinario(tvArbolBinario);
+
+            optInOrdenDesc.Checked = false;
+            optPreOrden.Checked = false;
+            optPostOrden.Checked = false;
         }
 
         private void optPostOrden_CheckedChanged(object sender, EventArgs e)
