@@ -84,6 +84,7 @@
             // optPostOrden
             // 
             this.optPostOrden.AutoSize = true;
+            this.optPostOrden.Cursor = System.Windows.Forms.Cursors.Hand;
             this.optPostOrden.Location = new System.Drawing.Point(17, 133);
             this.optPostOrden.Name = "optPostOrden";
             this.optPostOrden.Size = new System.Drawing.Size(78, 17);
@@ -96,6 +97,7 @@
             // optPreOrden
             // 
             this.optPreOrden.AutoSize = true;
+            this.optPreOrden.Cursor = System.Windows.Forms.Cursors.Hand;
             this.optPreOrden.Location = new System.Drawing.Point(17, 100);
             this.optPreOrden.Name = "optPreOrden";
             this.optPreOrden.Size = new System.Drawing.Size(73, 17);
@@ -108,6 +110,7 @@
             // optInOrdenDesc
             // 
             this.optInOrdenDesc.AutoSize = true;
+            this.optInOrdenDesc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.optInOrdenDesc.Location = new System.Drawing.Point(17, 67);
             this.optInOrdenDesc.Name = "optInOrdenDesc";
             this.optInOrdenDesc.Size = new System.Drawing.Size(133, 17);
@@ -120,6 +123,7 @@
             // optInOrdenAsc
             // 
             this.optInOrdenAsc.AutoSize = true;
+            this.optInOrdenAsc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.optInOrdenAsc.Location = new System.Drawing.Point(17, 34);
             this.optInOrdenAsc.Name = "optInOrdenAsc";
             this.optInOrdenAsc.Size = new System.Drawing.Size(126, 17);

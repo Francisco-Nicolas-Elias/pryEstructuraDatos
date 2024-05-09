@@ -68,6 +68,11 @@ namespace pryEstructuraDatos
 
         public void InOrdenAsc(DataGridView Dgv, clsNodo R)//R = Raiz
         {
+            if (R == null)
+            {
+                return; // Si la raíz es null, no hay nada que procesar
+            }
+
             //Pregunta si hay algo a la izquierda
             if (R.Izquierdo != null)
             {
@@ -91,6 +96,11 @@ namespace pryEstructuraDatos
 
         public void InOrdenDesc(DataGridView Dgv, clsNodo R)//R = Raíz 
         {
+            if (R == null)
+            {
+                return; // Si la raíz es null, no hay nada que procesar
+            }
+
             //Pregunta si hay algo a la derecha
             if (R.Derecho != null)
             {
@@ -114,6 +124,11 @@ namespace pryEstructuraDatos
 
         public void PreOrden(DataGridView dgv, clsNodo R) //R = Raiz
         {
+            if (R == null)
+            {
+                return; // Si la raíz es null, no hay nada que procesar
+            }
+
             //Agrega el nodo raíz primero
             dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite); 
 
@@ -138,6 +153,11 @@ namespace pryEstructuraDatos
 
         public void PostOrden(DataGridView dgv, clsNodo R)
         {
+            if (R == null)
+            {
+                return; // Si la raíz es null, no hay nada que procesar
+            }
+
             //Recorre el subárbol izquierdo si existe
             if (R.Izquierdo != null)
             {
@@ -162,6 +182,10 @@ namespace pryEstructuraDatos
 
         public void InOrdenAsc(ListBox Lst, clsNodo R)//R = Raiz
         {
+            if (R == null)
+            {
+                return; // Si la raíz es null, no hay nada que procesar
+            }
             //Pregunta si hay algo a la izquierda
             if (R.Izquierdo != null)
             {
@@ -185,6 +209,11 @@ namespace pryEstructuraDatos
 
         public void InOrdenDesc(ListBox Lst, clsNodo R)//R = Raiz
         {
+            if (R == null)
+            {
+                return; // Si la raíz es null, no hay nada que procesar
+            }
+
             //Pregunta si hay algo a la derecha
             if (R.Derecho != null)
             {
@@ -208,6 +237,11 @@ namespace pryEstructuraDatos
 
         public void PreOrden(ListBox lst, clsNodo R) //R = Raiz
         {
+            if (R == null)
+            {
+                return; // Si la raíz es null, no hay nada que procesar
+            }
+
             //Agrega el nodo raíz primero
             lst.Items.Add(R.Codigo);
 
@@ -232,6 +266,11 @@ namespace pryEstructuraDatos
 
         public void PostOrden(ListBox lst, clsNodo R)
         {
+            if (R == null)
+            {
+                return; // Si la raíz es null, no hay nada que procesar
+            }
+
             //Recorre el subárbol izquierdo si existe
             if (R.Izquierdo != null)
             {
@@ -260,6 +299,11 @@ namespace pryEstructuraDatos
         //Que esto se pase a un treeview
         private void PreOrden(clsNodo R, TreeNode nodoTreeView)//R = Raiz 
         {
+            if (R == null)
+            {
+                return; // Si la raíz es null, no hay nada que procesar
+            }
+
             TreeNode NodoPadre = new TreeNode(R.Codigo.ToString());
 
             nodoTreeView.Nodes.Add(NodoPadre);
@@ -285,6 +329,11 @@ namespace pryEstructuraDatos
 
         public void InOrdenAsc(ComboBox cb, clsNodo R)//R = Raiz
         {
+            if (R == null)
+            {
+                return; // Si la raíz es null, no hay nada que procesar
+            }
+
             //Pregunta si hay algo a la izquierda
             if (R.Izquierdo != null)
             {
@@ -308,6 +357,11 @@ namespace pryEstructuraDatos
 
         public void InOrdenDesc(ComboBox cb, clsNodo R)//R = Raíz
         {
+            if (R == null)
+            {
+                return; // Si la raíz es null, no hay nada que procesar
+            }
+
             //Pregunta si hay algo a la derecha
             if (R.Derecho != null)
             {
@@ -424,6 +478,10 @@ namespace pryEstructuraDatos
 
         private void GrabarVectorInOrden(clsNodo NodoPadre)
         {
+            if (NodoPadre == null)
+            {
+                return;
+            }
             if (NodoPadre.Izquierdo != null)
             {
                 GrabarVectorInOrden(NodoPadre.Izquierdo);
