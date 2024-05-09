@@ -34,6 +34,11 @@ namespace pryEstructuraDatos
             txtCodigoArbolBinario.Text = "";
             txtNombreArbolBinario.Text = "";
             txtTramiteArbolBinario.Text = "";
+
+            //optInOrdenAsc.Checked = false;
+            optInOrdenDesc.Checked = false;
+            optPreOrden.Checked = false;
+            optPostOrden.Checked = false;
         }
 
         private void txtCodigoArbolBinario_TextChanged(object sender, EventArgs e)
@@ -114,6 +119,10 @@ namespace pryEstructuraDatos
                 Arbol.RecorrerArbolBinario(cbCodigoArbolBinario);
                 Arbol.RecorrerArbolBinario(lstArbolBinario);
                 Arbol.RecorrerArbolBinario(tvArbolBinario);
+
+                optInOrdenDesc.Checked = false;
+                optPreOrden.Checked = false;
+                optPostOrden.Checked = false;
             }
             else
             {
