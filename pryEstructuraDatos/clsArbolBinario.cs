@@ -70,7 +70,7 @@ namespace pryEstructuraDatos
         {
             if (R == null)
             {
-                return; // Si la raíz es null, no hay nada que procesar
+                return; //Si la raíz es null, no hay nada que procesar
             }
 
             //Pregunta si hay algo a la izquierda
@@ -98,7 +98,7 @@ namespace pryEstructuraDatos
         {
             if (R == null)
             {
-                return; // Si la raíz es null, no hay nada que procesar
+                return; //Si la raíz es null, no hay nada que procesar
             }
 
             //Pregunta si hay algo a la derecha
@@ -126,7 +126,7 @@ namespace pryEstructuraDatos
         {
             if (R == null)
             {
-                return; // Si la raíz es null, no hay nada que procesar
+                return; //Si la raíz es null, no hay nada que procesar
             }
 
             //Agrega el nodo raíz primero
@@ -155,7 +155,7 @@ namespace pryEstructuraDatos
         {
             if (R == null)
             {
-                return; // Si la raíz es null, no hay nada que procesar
+                return; //Si la raíz es null, no hay nada que procesar
             }
 
             //Recorre el subárbol izquierdo si existe
@@ -184,7 +184,7 @@ namespace pryEstructuraDatos
         {
             if (R == null)
             {
-                return; // Si la raíz es null, no hay nada que procesar
+                return; //Si la raíz es null, no hay nada que procesar
             }
             //Pregunta si hay algo a la izquierda
             if (R.Izquierdo != null)
@@ -211,7 +211,7 @@ namespace pryEstructuraDatos
         {
             if (R == null)
             {
-                return; // Si la raíz es null, no hay nada que procesar
+                return; //Si la raíz es null, no hay nada que procesar
             }
 
             //Pregunta si hay algo a la derecha
@@ -239,7 +239,7 @@ namespace pryEstructuraDatos
         {
             if (R == null)
             {
-                return; // Si la raíz es null, no hay nada que procesar
+                return; //Si la raíz es null, no hay nada que procesar
             }
 
             //Agrega el nodo raíz primero
@@ -268,7 +268,7 @@ namespace pryEstructuraDatos
         {
             if (R == null)
             {
-                return; // Si la raíz es null, no hay nada que procesar
+                return; //Si la raíz es null, no hay nada que procesar
             }
 
             //Recorre el subárbol izquierdo si existe
@@ -301,7 +301,7 @@ namespace pryEstructuraDatos
         {
             if (R == null)
             {
-                return; // Si la raíz es null, no hay nada que procesar
+                return; //Si la raíz es null, no hay nada que procesar
             }
 
             TreeNode NodoPadre = new TreeNode(R.Codigo.ToString());
@@ -331,7 +331,7 @@ namespace pryEstructuraDatos
         {
             if (R == null)
             {
-                return; // Si la raíz es null, no hay nada que procesar
+                return; //Si la raíz es null, no hay nada que procesar
             }
 
             //Pregunta si hay algo a la izquierda
@@ -359,7 +359,7 @@ namespace pryEstructuraDatos
         {
             if (R == null)
             {
-                return; // Si la raíz es null, no hay nada que procesar
+                return; //Si la raíz es null, no hay nada que procesar
             }
 
             //Pregunta si hay algo a la derecha
@@ -480,7 +480,7 @@ namespace pryEstructuraDatos
         {
             if (NodoPadre == null)
             {
-                return;
+                return;//Si el NodoPadre es null, no hay nada que procesar
             }
             if (NodoPadre.Izquierdo != null)
             {
