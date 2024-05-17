@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtConsultaSql = new System.Windows.Forms.TextBox();
             this.btnListar = new System.Windows.Forms.Button();
             this.dgvBaseDatosConsulta = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaseDatosConsulta)).BeginInit();
@@ -45,13 +45,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Consulta en SQL:";
             // 
-            // textBox1
+            // txtConsultaSql
             // 
-            this.textBox1.Location = new System.Drawing.Point(17, 40);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(817, 179);
-            this.textBox1.TabIndex = 1;
+            this.txtConsultaSql.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConsultaSql.Location = new System.Drawing.Point(17, 40);
+            this.txtConsultaSql.Multiline = true;
+            this.txtConsultaSql.Name = "txtConsultaSql";
+            this.txtConsultaSql.Size = new System.Drawing.Size(817, 179);
+            this.txtConsultaSql.TabIndex = 1;
             // 
             // btnListar
             // 
@@ -63,6 +64,7 @@
             this.btnListar.TabIndex = 2;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // dgvBaseDatosConsulta
             // 
@@ -77,10 +79,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(835, 496);
+            this.ClientSize = new System.Drawing.Size(849, 496);
             this.Controls.Add(this.dgvBaseDatosConsulta);
             this.Controls.Add(this.btnListar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtConsultaSql);
             this.Controls.Add(this.label1);
             this.Name = "frmBaseDatosConsulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -94,7 +96,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtConsultaSql;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.DataGridView dgvBaseDatosConsulta;
     }
