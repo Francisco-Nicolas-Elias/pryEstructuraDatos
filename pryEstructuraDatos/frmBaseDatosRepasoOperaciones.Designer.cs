@@ -50,6 +50,9 @@
             // 
             this.cbOperacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbOperacion.FormattingEnabled = true;
+            this.cbOperacion.Items.AddRange(new object[] {
+            "Proyección simple",
+            "Diferencia"});
             this.cbOperacion.Location = new System.Drawing.Point(271, 15);
             this.cbOperacion.Name = "cbOperacion";
             this.cbOperacion.Size = new System.Drawing.Size(407, 23);
@@ -65,10 +68,13 @@
             this.btnListar.TabIndex = 2;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // lblListar
             // 
+            this.lblListar.BackColor = System.Drawing.SystemColors.Control;
             this.lblListar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblListar.Location = new System.Drawing.Point(15, 52);
             this.lblListar.Name = "lblListar";
             this.lblListar.Size = new System.Drawing.Size(781, 145);
