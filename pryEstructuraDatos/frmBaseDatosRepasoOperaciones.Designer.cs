@@ -70,7 +70,7 @@
             "Segunda intersección",
             "Segunda diferencia",
             "Tercera proyección simple",
-            "Tercera diferencia"});
+            "Tercera selección simple"});
             this.cbOperacion.Location = new System.Drawing.Point(271, 15);
             this.cbOperacion.Name = "cbOperacion";
             this.cbOperacion.Size = new System.Drawing.Size(407, 23);
