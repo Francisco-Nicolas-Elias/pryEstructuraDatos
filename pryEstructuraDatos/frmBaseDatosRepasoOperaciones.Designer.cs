@@ -52,7 +52,25 @@
             this.cbOperacion.FormattingEnabled = true;
             this.cbOperacion.Items.AddRange(new object[] {
             "Proyección simple",
-            "Diferencia"});
+            "Proyección multiatributo",
+            "Juntar",
+            "Selección simple",
+            "Selección multiatributo",
+            "Selección por convolución",
+            "Unión",
+            "Intersección",
+            "Diferencia",
+            "Segunda proyección simple",
+            "Segunda proyección multiatributo",
+            "Segunda juntar",
+            "Segunda selección simple",
+            "Segunda selección multiatributo",
+            "Segunda selección por convolución",
+            "Segunda unión",
+            "Segunda intersección",
+            "Segunda diferencia",
+            "Tercera proyección simple",
+            "Tercera diferencia"});
             this.cbOperacion.Location = new System.Drawing.Point(271, 15);
             this.cbOperacion.Name = "cbOperacion";
             this.cbOperacion.Size = new System.Drawing.Size(407, 23);
